@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>弾幕回避ゲーム</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    canvas {
+      background: black;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid white;
+    }
+    #info {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    #info span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="600" height="800"></canvas>
+
+  <div id="info">
+    <div>レベル: <span id="level">1</span></div>
+    <div>スコア: <span id="shots">0</span></div>
+    <div>スペースキーで弾発射</div>
+    <div>レベル５０でクリアです！！！</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
